@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/cart.js"></script>
+</head>
+<body>
+	<div class="top"></div>
+	<div class="cart w w-max">
+		<div class="cart-tit">购物车</div>
+		
+		<div class="cart-area">
+			
+		</div>
+		<div class="cart-footer">
+			<div class="left fl">
+				<input id = 'allSelect' type="checkbox" checked>全选
+				<a href="javascript:getIds()">[删除选中商品]</a>
+			</div>
+			<div class="right fr">
+				<div class="sum-area fl">
+					<span class="lab">总价:</span>
+					<span class="sum-price">0</span>
+				</div>
+				<button class="sub-button" disabled>结算</button>
+			</div>
+			<div class='clearfix'></div>
+		</div>
+	</div>
+	<div class="fixed-wrap"></div>
+	<div class="recv-address">
+	    <h2><span class="ft18">填写收货地址</span><i>×</i></h2>
+	    <form >
+	        <div class="form-group ">
+	            <div class="input-group rela">
+	                <span><em>*</em> 收货人姓名：</span>
+	                <input type="text" autocomplete="off" class="u-name consignee-name" value="">
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <span><em>*</em> 所在地区：</span>
+	            <em id="span_province"><select name="province" id="select_province" onclick="selectProvince()" style="display: inline-block;">
+	            <option value="none">-请选择-</option>
+<option value="北京">北京</option>
+<option value="天津">天津</option>
+<option value="河北">河北</option>
+<option value="山西">山西</option>
+<option value="内蒙古">内蒙古</option>
+<option value="上海">上海</option>
+<option value="江苏">江苏</option>
+<option value="浙江">浙江</option>
+<option value="安徽">安徽</option>
+<option value="福建">福建</option>
+<option value="山东" selected>山东</option>
+<option value="广东">广东</option>
+<option value="广西">广西</option>
+<option value="海南">海南</option>
+<option value="江西">江西</option>
+<option value="河南">河南</option>
+<option value="湖北">湖北</option>
+<option value="湖南">湖南</option>
+<option value="重庆">重庆</option>
+<option value="四川">四川</option>
+<option value="贵州">贵州</option>
+<option value="云南">云南</option>
+<option value="西藏">西藏</option>
+<option value="陕西">陕西</option>
+<option value="甘肃">甘肃</option>
+<option value="青海">青海</option>
+<option value="宁夏">宁夏</option>
+<option value="新疆">新疆</option>
+<option value="辽宁">辽宁</option>
+<option value="吉林">吉林</option>
+<option value="黑龙江">黑龙江</option>
+<option value="香港">香港</option>
+<option value="澳门">澳门</option>
+<option value="台湾">台湾</option>
+<option value="鱼岛">鱼岛</option>
+<option value="群岛">群岛</option>
+	            </select>
+	            </em>
+	            <em id="span_city"><select name="city" id="select_city" class="hide" ></select></em>
+	        </div>
+	        <div class="form-group">
+	            <span><em>*</em> 详细地址：</span>
+	            <input type="text" name="data[address]" class="u-address">
+	        </div>
+	
+	        <div class="form-group">
+	            <input id="check-default" checked="checked" type="checkbox" name="data[default]" value="1">
+	            <label for="check-default">设为默认收货地址</label>
+	        </div>
+	        <a href="javascript:" class="form-submit">提交订单</a>
+	    </form>
+	    
+	</div>
+	<div class="footer"></div>
+	
+</body>
+</html>

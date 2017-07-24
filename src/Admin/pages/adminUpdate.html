@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <title>管理员修改</title>
+    <link rel="stylesheet" type="text/css" href="../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/admin.js"></script>
+    
+  </head>
+  
+  <body>
+  <script type="text/javascript">
+  var id = getUrlPara("id");
+  	$.ajax({
+  		url:"http://nov:8080/ipet/getOneAdminServlet",
+  		data:{
+  			"id":id
+  		},
+  		type:"POST",
+  		success:function (msg){
+  			
+  			var res = $.parseJSON(msg);
+  			console.log(res);
+  			$("input[name=adminId]").val(id);
+  			$("input[name=adminName]").val(res.adminName);
+  			$("input[name=typeId]").val(res.adminType);
+  			$("select").val(res.adminType);
+  			$("input[name=loginName]").val(res.loginName);
+  			$("input[name=loginPwd]").val(res.loginPwd);
+  		}
+  	})
+  	
+  	function updateAdminInfo(){
+  		$.ajax({
+	  		url:"http://nov:8080/ipet/updateAdminServlet",
+	  		type:"POST",
+	  		data:{
+	  			"adminId":$("input[name=adminId]").val(),
+	  			"adminName":$("input[name=adminName]").val(),
+	  			"adminTypeId":$("select").val(),
+	  			"loginName":$("input[name=loginName]").val(),
+	  			"loginPwd":$("input[name=loginPwd]").val()
+	  		},
+	  		success:function(msg){
+	  			window.alert(msg);
+	  			window.location.href="adminManage.html";
+	  		}
+	  		
+	  	})
+  	}
+  </script>
+   
+<div class="Content">
+	<div class="title">修改管理员信息</div>
+    <div >
+        
+        <form>
+            <table class="update-table">
+                <tr>
+                    <td>管理员ID</td>
+                    <td>
+                        <input type="text" id="adminId" name="adminId" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td>管理员姓名</td>
+                    <td>
+                        <input type="text" name="adminName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="hidden" id="typeId" name="typeId" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>管理级别</td>
+                    <td>
+                        <select name="adminTypeId">
+                           <option value="1">商品管理员</option>
+                           <option value="2">订单管理员</option>
+                           <option value="3">会员管理员</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>登录名</td>
+                    <td>
+                        <input type="text" name="loginName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td>
+                        <input type="text" name="loginPwd"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="adminManage.html">返回</a></td>
+                    <td><input type="button" onclick="updateAdminInfo()" name="update" value="修改" ></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+  </body>
+</html>

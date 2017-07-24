@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8" />
+  	<title>订单管理</title>
+  	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../easyui/datagrid-detailview.js"></script>
+    <script type="text/javascript" src="../js/admin.js"></script>
+    
+  </head>
+  
+  <body onload="initOrderList()">
+ 	<div id="tb">
+		<span>订单编号：</span>
+		<input type="text" id="key" />
+		<button onclick="doOrderSearch()">搜索</button>
+		<button onclick="seeAll()">查看所有</button>
+		<button onclick="deleteOrders()">批量删除</button>
+		<button onclick="searchSendOrders()">查看已发货订单</button>
+		<button onclick="searchNotSendOrders()">查看未发货订单</button>
+		
+	</div>
+	<div id="dg"></div>
+  </body>
+</html>

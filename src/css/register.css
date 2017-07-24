@@ -1,0 +1,155 @@
+@charset "UTF-8";
+.header {
+    height: 120px;
+    line-height: 120px
+}
+
+.header h1 {
+}
+
+.header .shortcut {
+    margin: 0 80px;
+    float: right;
+    color: #666
+}
+
+.header .shortcut a {
+    font-size: 14px;
+    padding: 0 10px
+}
+
+.header .shortcut a:hover {
+    color: #F16522
+}
+
+.main {
+    border-top: 1px solid #ddd
+}
+
+.main .reg-box {
+    margin-top: 40px
+}
+
+.main .reg-box div {
+    position: relative;
+    width: 580px;
+    line-height: 43px;
+    margin: auto auto 8px
+}
+
+.main .reg-box input[type=text],
+.main .reg-box input[type=password],
+.main .reg-box input[type=button] {
+    font-size: 14px;
+    float: left;
+    width: 260px;
+    height: 45px;
+    padding: 0 8px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    margin-right: 6px;
+    border-radius: 3px
+}
+
+
+.main .reg-box input[type=text].telYZ {
+	width:150px;
+}
+
+.main .reg-box .getYz-btn{
+	text-align:center;	
+	font-size: 14px;
+    float: left;
+    line-height: 45px;
+    background-color: #fff;
+    margin-right: 6px;
+    border-radius: 3px;
+	width:100px;
+	margin-left:4px;
+	border:1px solid #F26D34;
+	color:#999;
+	cursor:pointer;
+}
+.main .reg-box .getYz-btn:hover{
+	background:#F26D34;
+	color:#fff;
+}
+.main .reg-box input[type=button].reg-btn {
+    margin-left: 105px;
+    margin-top: 8px;
+    background: #ddd;
+    color: #000;
+    border: none
+}
+
+.main .reg-box input[type=button].reg-able {
+    cursor: pointer;
+    background: #F26D34;
+    color: #fff;
+}
+
+.main .reg-box input[type=checkbox] {
+    margin-left: 105px;
+    margin-top: 8px
+}
+
+.main .reg-box span {
+    float: left;
+    font-size: 14px;
+    width: 100px;
+    padding-right: 5px;
+    text-align: right
+}
+
+.main .reg-box span:before {
+    font-size: 14px;
+    content: "* ";
+    color: #F26D34
+}
+
+.main .reg-box i,
+.main .reg-box label {
+    display: none
+}
+
+.main .reg-box .error input {
+    border: 1px solid #F26D34!important
+}
+
+.main .reg-box .error label {
+    display: inline-block;
+    width: 166px;
+    background: #FFF3D9;
+    color: #F26D34;
+    margin-top: 1px;
+    padding: 0 8px
+}
+
+.main .reg-box .error i,
+.main .reg-box .success label {
+    display: none
+}
+
+.main .reg-box .success input {
+    border: 1px solid #ddd!important
+}
+
+.main .reg-box .success i {
+    display: inline-block;
+}
+
+.pswStrength .strength1 {
+    margin-left: 105px
+}
+
+.pswStrength b {
+    float: left;
+    width: 60px;
+    height: 5px;
+    margin-right: 1px;
+    background: #ddd
+}
+
+.pswStrength .active {
+    background: #F76429
+}

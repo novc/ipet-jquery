@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+</head>
+<body>
+<!-- 
+头部 ================================================-->
+<div id="header">
+    <div class="w-max w">
+        <div class="header_tl fl">
+            <span class="c000">送至：</span>
+            <span class="main_place">
+                <span class="province_value"></span>
+                <i id="rotate"></i>
+            </span>
+        </div>
+        <!-- =========功能区========= -->
+        <ul class="header_tr fr">
+        	
+            <li data-name="nologin"><a href="login.html">[登录]</a></li>
+            <li data-name="nologin"><a href="register.html">[注册]</a></li>
+            <li><a href="index.html">首页</a></li>
+            <li>
+                <i class="icon icon_car"></i>
+                <a href="cart.html">
+                    <span>购物车(</span>
+                    <span class="cart_num cf60">0</span>
+                    <span>)</span>
+                </a>
+            </li>
+            <li class="dropmn">
+                <i class="icon icon_mine"></i>
+                <a href="#">我的i宠</a>
+                <i class="icon jiantou"></i>
+                <div class="myec_tc boxsha">
+                    <a href="#">我的订单</a>
+                    <a href="#">充值得优惠</a>
+                    <a href="#">兑换现金劵</a>
+                </div>
+            </li>
+            <li>
+                <a href="http://nov:8080/ipet/Admin/adminLogin.jsp">后台登录</a>
+            </li>
+            <li>
+                <a href="#"> 帮助</a>
+            </li>
+            <li>
+                <a class="cred" href="#">投诉建议</a>
+            </li>
+            <li>
+                <a href="userLoginOut">退出登录</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<!--  logo 搜索栏
+    ================================================ -->
+    <div class="search-bar">
+        <div class="w-max w">
+            <h1 class="logo fl">
+                <a href="index.html"></a>
+            </h1>
+            <div class="search_box fl">
+                <div class="search_form fl">
+                    <input type="text" name="search_value" placeholder="狗粮" />
+                    <button class="search-btn" onclick="search()">搜索</button>
+                </div>
+                <div class="hotlink fl">
+                    <span class="microsoft c999">热门搜索：</span>
+                </div>
+            </div>
+            <a href="cart.html" class="shopingcar fl">
+                <span>购物车(</span>
+                <span class="prod_num cf60">0</span>
+                <span>)</span>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+<!-- 
+    地区选择================================= -->
+<div class="area_box">
+    <div class="container">
+        <div class="area_header">
+            <button class="province_opt active"></button>
+            <button class="city_opt unactive"></button>
+        </div>
+        <ul class="province_box">
+            <li>
+                <label>华北：</label>
+                <span>北京</span>
+                <span>天津</span>
+                <span>河北</span>
+                <span>山西</span>
+                <span>内蒙古</span>
+            </li>
+            <li>
+                <label>华东：</label>
+                <span>上海</span>
+                <span>江苏</span>
+                <span>浙江</span>
+                <span>安徽</span>
+                <span>福建</span>
+                <span>山东</span>
+            </li>
+            <li>
+                <label>华南：</label>
+                <span>广东</span>
+                <span>广西</span>
+                <span>海南</span>
+            </li>
+            <li>
+                <label>华中：</label>
+                <span>江西</span>
+                <span>河南</span>
+                <span>湖北</span>
+                <span>湖南</span>
+            </li>
+            <li>
+                <label>西南：</label>
+                <span class="active">重庆</span>
+                <span>四川</span>
+                <span>贵州</span>
+                <span>云南</span>
+                <span>西藏</span>
+            </li>
+            <li>
+                <label>西北：</label>
+                <span>陕西</span>
+                <span>甘肃</span>
+                <span>青海</span>
+                <span>宁夏</span>
+                <span>新疆</span>
+            </li>
+            <li>
+                <label>东北：</label>
+                <span>辽宁</span>
+                <span>吉林</span>
+                <span>黑龙江</span>
+            </li>
+            <li>
+                <label>其他：</label>
+                <span>香港</span>
+                <span>澳门</span>
+                <span>台湾</span>
+                <span>钓鱼台</span>
+                <span>南沙群岛</span>
+            </li>
+        </ul>
+        <div class="city_box">
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>

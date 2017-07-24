@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>用户信息修改</title>
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+	<link rel="stylesheet" type="text/css" href="../css/admin.css">
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="../js/admin.js"></script>
+	
+</head>
+<body onload="DetailUserInit()">
+	<div class="Content">
+		<div class="title">用户信息修改</div>
+		<div>
+			<form>
+				<table class="update-table">
+					<tr>
+						<td>会员ID：</td>
+				      	<td><input type="text" name="userID" readonly></td>
+				    </tr>
+				    <tr>
+				     	<td>会员名：</td>
+				      	<td><input type="text" name="userName" readonly></td>
+				    </tr>
+				    <tr>
+				      	<td>密码：</td>
+				      	<td><input type="text"  name="password"></td>
+				    </tr>
+				    <tr>
+				     	<td>邮箱：</td>
+				      	<td><input type="text"  name="email"></td>
+				    </tr>
+				    <tr>
+				      	<td>真实姓名：</td>
+				      	<td><input type="text"  name="trueName"></td>
+				    </tr>
+				    <tr>
+				      	<td>性别：</td>
+				      	<td><input type="text"  name="sex"></td>
+				    </tr>
+				    <tr>
+				      	<td>生日：</td>
+				     	 <td><input type="text"  name="birthday"></td>
+				    </tr>
+				    <tr>
+				      	<td>地址：</td>
+				      	<td><input type="text"  name="address"></td>
+				    </tr>
+				    <tr>
+				      	<td>邮编：</td>
+				      	<td><input type="text"  name="postcode"></td>
+				    </tr>
+				    <tr>
+				      	<td>电话号码：</td>
+				      	<td><input type="text"  name="phone"></td>
+				    </tr>
+				    <tr>
+				      	<td>手机号码：</td>
+				      	<td><input type="text"  name="mphone"></td>
+				    </tr>
+				    <tr>
+				      	<td>问题：</td>
+				      	<td><input type="text"  name="question"></td>
+				    </tr>
+				    <tr>
+				      	<td>答案：</td>
+				     	 <td><input type="text"  name="answer"></td>
+				    </tr>
+				    <tr>
+				      	<td>积分：</td>
+				      	<td><input type="text"  name="score"></td>
+				    </tr>
+				    <tr>
+				      	<td></td>
+				      	<td><input type="button" onclick="updateUser()" value="修改"></td>
+				    </tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

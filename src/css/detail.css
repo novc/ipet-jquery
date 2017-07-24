@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.img-area .small-box,
+.intro .goods-title {
+    margin-top: 15px
+}
+
+.top {
+    height: 150px
+}
+.img-area {
+    width: 450px
+}
+
+.img-area .big-box {
+    width: 450px;
+    height: 320px;
+    text-align: center
+}
+
+.img-area .small-box li {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin-right: 5px
+}
+
+.intro .goods-title span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333
+}
+
+.intro .goods-intro {
+    color: #e3393c;
+    font-size: 14px;
+    margin-top: 20px
+}
+
+.intro .price-box {
+    margin-top: 30px;
+    width: 660px;
+    height: 110px;
+    background: url(../img/price-bg.jpg);
+    line-height: 110px;
+    padding: 0 30px
+}
+
+.intro .price-box .price-lab {
+    margin-right: 10px;
+    color: #999
+}
+
+.intro .price-box .price {
+    color: #e3393c;
+    font-size: 34px;
+    font-weight: 700
+}
+
+.intro .price-box .price:before {
+    content: "￥ ";
+    font-size: 20px;
+    font-weight: 500
+}
+
+.intro .num-box {
+    margin-top: 40px
+}
+
+.intro .num-box .num-lab {
+    font-size: 14px;
+    color: #999;
+    margin-right: 10px
+}
+
+.intro .num-box .num-choose {
+    width: 50px;
+    margin-right: 10px
+}
+
+.intro .num-box .num-choose input {
+    width: 45px;
+    text-align: center
+}
+
+.intro .buy-button {
+    margin-top: 80px;
+    width: 190px;
+    height: 56px;
+    border: none;
+    background-color: #F26D34;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer
+}
+
+.goodsDetail {
+	margin-bottom:50px;
+}
+
+.goodsDetail .title {
+    line-height: 40px
+}
+
+.goodsDetail .detail-img {
+    border: 1px solid #ddd;
+    text-align: center
+}
+

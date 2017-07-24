@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>管理员管理</title>
+    <link rel="stylesheet" type="text/css" href="../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/admin.js"></script>
+  </head>
+  
+  <body onload="initAdminList()">
+  	<div id="tb">
+		<span>管理员姓名：</span>
+		<input type="text" id="key" />
+		<button onclick="doAdminSearch()">搜索</button>
+		<button onclick="seeAll()">查看所有</button>
+		<button onclick="seeGoodsAdmins()">查看商品管理员</button>
+		<button onclick="seeOrdersAdmins()">查看订单管理员</button>
+		<button onclick="seeUsersAdmins()">查看会员管理员</button>
+		<button onclick="seeSystemAdmin()">查看系统管理员</button>
+		<button onclick="addAdmin()">添加管理员</button>
+	</div>
+    <div id="dg"></div>
+  </body>
+</html>

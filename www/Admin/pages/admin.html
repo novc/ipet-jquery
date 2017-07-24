@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ipet后台管理</title>
+	<link rel="icon" href="../images/icon.png">
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/demo.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/admin.js"></script>
+</head>
+<body class="easyui-layout" onload = "getAdmin()">
+  	
+    <div class="header" data-options="region:'north',border:false">
+        <h1 class="fl">宠物商城</h1>
+        <div class="logininfo">
+            <div class="admin">欢迎您，<span></span>&nbsp;!</div>
+            <div class="time">现在是：<span></span></div>
+        </div>
+        <ul>
+            <li><a href="updatePassword.html" target="contentIframe">修改密码</a></li>|
+            <li><a href="javascript:loginOut()">注销</a></li>
+        </ul>
+    </div>
+    <div class="left" data-options="region:'west',title:'菜单栏'">
+        <div class="easyui-accordion">
+            <div title="用户管理">
+                <ul>
+                	<li><a href="userManage.html" target="contentIframe">用户信息</a></li>
+                </ul>
+            </div>
+            <div title="订单管理">
+                <ul>
+				    <li><a href="orderManage.html" target="contentIframe">所有订单</a></li>
+				</ul>
+            </div>
+            <div title="公告管理">
+            	<ul>
+            		<li><a href="informManage.html" target="contentIframe">公告信息</a></li>
+            		<li><a href="informAdd.html" target="contentIframe">发布公告</a></li>
+            	</ul>
+            </div>
+            <div title="留言查看">
+            	<ul>
+            		<li><a href="NoteManage.html" target="contentIframe">留言信息</a></li>
+            	</ul>
+            </div>
+            <div title="商品管理">
+            	<ul>
+            		<li><a href="goodsManage.html" target="contentIframe">查看所有商品</a></li>
+            	</ul>
+            </div>
+            <div title="Admin管理">
+            	<ul>
+            		<li><a href="adminManage.html" target="contentIframe" >管理员</a></li>
+            		<li><a href="adminAdd.html" target="contentIframe">添加管理员</a></li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom" data-options="region:'south',border:false">
+    	宠物商城 At 2017/5/5
+    </div>
+    <div data-options="region:'center'">
+		<iframe name="contentIframe" scrolling="auto" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+    <script type="text/javascript">
+    	var date = new Date();
+    	var year = date.getFullYear();
+    	var month = date.getMonth();
+    	var day = date.getDate();
+  		$(".time span").html(year+"年 "+month+"月 "+day+"日 ");
+  	</script>
+  </body>
+</html>

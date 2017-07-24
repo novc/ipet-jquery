@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ipet后台登录</title>
+	<link rel="icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<link rel="stylesheet" type="text/css" href="css/adminLogin.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/adminLogin.js"></script>
+</head>
+<body>
+	<div class="header w-max w">
+		<h1 class="logo fl"><a href=""><img src="images/logo.png"></a></h1>
+		<div class="shortcut">
+			<a href="../index.html">首页</a>
+			|
+			<a href="../login.html">用户登录</a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="login-wrap bgwhite">
+			<div class="login-area">
+				<form action="adminLoginServlet" method="post" name="form" id="form">
+					<div class="login-title">管理员登录</div>
+					<div class="input user mt20">
+						<i class="icon user-ico"></i>
+						<input type="text" id="name" name="name"  />
+					</div>
+					<div class="input password mt20">
+						<i class="icon psw-ico"></i>
+						<input type="password" id="password" name="password" />
+					</div>
+					
+					<div class="message"></div>
+					<input class="submit mt15" type="button" onclick="login()" value="登录" />
+				</form>
+				
+			</div>
+		</div>
+	</div>
+	<div class="footer w w-max">
+		宠物商城  At 2017/5/5
+	</div>
+</body>
+</html>

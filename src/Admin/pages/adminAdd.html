@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>添加管理员</title>
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/adminAdd.js"></script>
+	
+</head>
+<body>
+	<div class="Content">
+    <div class="title">添加管理员</div>
+    <div >
+        <form>
+            <table class="update-table">
+                <tr>
+                    <td>管理员类别</td>
+                    <td>
+                        <select name="adminTypeId" >
+                            <option value="1">商品管理员</option>
+                            <option value="2">订单管理员</option>
+                            <option value="3">会员管理员</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="tip adminTypeTip">*</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>管理员姓名</td>
+                    <td>
+                        <input type="text" name="adminName" onfocus="check.tipEmpty('adminNameTip')" onblur="check.checkAdminName('adminName')" />
+                    </td>
+                    <td>
+                        <div class="tip adminNameTip">*</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>登录名</td>
+                    <td>
+                        <input type="text" name="loginName" onfocus="check.tipEmpty('loginNameTip')" onblur="check.checkLoginName()" />
+                    </td>
+                    <td>
+                        <div class="tip loginNameTip">*</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>登录密码</td>
+                    <td>
+                        <input type="password" name="loginPwd1" onfocus="check.tipEmpty('loginpw1Tip')" onblur="check.checkPassword()" />
+                    </td>
+                    <td>
+                        <div class="tip loginpw1Tip">*</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>确认密码</td>
+                    <td>
+                        <input type="password" name="loginPwd2" onfocus="check.tipEmpty('loginpw2Tip')" onblur="check.confirmPsw()" />
+                    </td>
+                    <td>
+                        <div class="tip loginpw2Tip">*</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="添加" onclick="check.submit()">
+                        <input type="button" value="取消" style="margin-left:30px;" onclick="cancel()">
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

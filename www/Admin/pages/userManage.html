@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8"> 
+    <title>用户管理</title>
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../easyui/datagrid-detailview.js"></script>
+    <script type="text/javascript" src="../js/admin.js"></script>
+ </head>
+  
+  <body onload="initUserList()">
+  	
+	<div id="dg"></div>
+	<div id="tb">
+		<span>会员名：</span>
+		<input type="text" id="key" />
+		<button onclick="doSearch()">搜索</button>
+		<button onclick="reload()">查看所有</button>
+		<button onclick="deleteUsers()">批量删除</button>
+	</div>
+  </body>
+</html>

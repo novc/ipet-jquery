@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>发布公告</title>
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+	<link rel="stylesheet" type="text/css" href="../css/admin.css">
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="../js/admin.js"></script>
+</head>
+<body>
+<div class="Content">
+	<div class="title">发布公告</div>
+	<div>
+		<form>
+			<table class="update-table">
+				<tr>
+                    <td>标题:</td>
+                    <td>
+                        <input type="text" name="informTitle" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容:</td>
+                    <td>
+                        <textarea rows="10" cols="50" name="informContent"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input onclick="addInform()" type="button" value="添加">
+                    </td>
+                    <td>
+                        <input onclick="cancel()" type="button" value="返回">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

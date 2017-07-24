@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/*------------样式重置-------------*/
+body {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    vertical-align: baseline;
+    background-color: #fff;
+}
+
+html, body, ul, li, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+li{
+    list-style: none;
+}
+input,button{
+    outline: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.w {
+    margin: 0 auto;
+}
+.w-max{
+    width: 1200px;
+}
+.microsoft{
+    font-family: "微软雅黑";
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+.rela{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.clear{
+    clear: both;
+}
+.overflow{
+    overflow: hidden;
+}
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bgwhite{
+    background-color: #fff;
+}
+.cfff{
+    color: #fff;
+}
+.c444{
+    color: #444;
+}
+.c666{
+    color: #666;
+}
+.cred{
+    color: red;
+}
+.c000{
+    color: #000;
+}
+.c999{
+    color: #999;
+}
+.ft12{
+    font-size: 12px;
+}
+.ft14{
+    font-size: 14px;
+}
+.ft16{
+    font-size: 16px;
+}
+.ft18{
+    font-size: 18px;
+}
+.ft20{
+    font-size: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+.border{
+    border:1px solid #e7e7e7;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt15{
+    margin-top: 15px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt30{
+    margin-top:30px;
+}
+.ml40{
+    margin-left: 40px;
+}
+.mr5{
+    margin-right: 5px;
+}
+.mr85{
+    margin-right: 85px;
+}
+.cED4044{
+    color: #ED4044;
+}
+.cf60{
+    color:#f60;
+}
+.ftc{
+    text-align: center;
+}
+#noborder{
+    border:0px;
+}
